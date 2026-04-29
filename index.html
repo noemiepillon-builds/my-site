@@ -73,11 +73,11 @@
   .stop .when .here { display: inline-block; margin-left: 6px; padding: 2px 8px; background: var(--accent); color: white; font-size: 0.7rem; border-radius: 999px; letter-spacing: 0.05em; }
   .stop .stop-logo { display: flex; align-items: center; justify-content: center; padding-top: 4px; }
   .stop .stop-logo img { max-width: 64px; max-height: 40px; object-fit: contain; }
-  .stop .role { font-size: 1.15rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
-  .stop .where { font-size: 0.95rem; color: var(--muted); margin-bottom: 12px; }
+  .stop .role { font-size: 1.15rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; text-align: left; }
+  .stop .where { font-size: 0.95rem; color: var(--muted); margin-bottom: 12px; text-align: left; }
   .stop .where strong { color: var(--ink); font-weight: 500; }
   .stop .where .sector { color: var(--soft); }
-  .stop .blurb { font-size: 0.95rem; color: var(--muted); margin: 0; }
+  .stop .blurb { font-size: 0.95rem; color: var(--muted); margin: 0; text-align: left; max-width: 640px; }
 
   .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
   .feature { padding: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
@@ -137,11 +137,11 @@
     <div class="hero-text">
       <div class="eyebrow">Strategic Operator · Future Chief of Staff</div>
       <h1>Noémie<br><span class="accent">Pillon.</span></h1>
-      <p class="lede">15+ years partnering with founders and CEOs to translate strategy into execution. The how to the why - across e-commerce, gaming, foodtech and ad tech.</p>
+      <p class="lede">15+ years partnering with founders and CEOs across three continents to translate strategy into execution. The how to the why.</p>
       <div class="meta">
         <span>Based in Dubai</span>
         <span>UAE Golden Visa</span>
-        <span>French &amp; English native</span>
+        <span>Bilingual French &amp; English</span>
       </div>
     </div>
     <div class="portrait">
@@ -160,13 +160,16 @@
     <h2>About</h2>
     <p class="h-large">I am the how to the why. I sit close to founders and CEOs, turn ambiguous priorities into operating systems, and make sure the right things actually ship.</p>
     <p>For 15 years I have worked in the valuable middle ground between strategy and admin: cross-functional ownership across <strong>operations, finance, people, commercial</strong> and investor conversations, without needing to be the specialist in any single one. That is the territory where strong Chiefs of Staff are built, and it is the territory I have lived in across <strong>Disney, Gameloft, Talabat, Audiomob, Boss Bunny, Pedigri</strong> and others.</p>
+    <p>My career has been built across <strong>three continents and a dozen markets</strong>: London and Paris in Europe; Singapore, Vietnam, China and New Zealand in Asia; the UAE, Saudi Arabia and the wider MEA region from Dubai. That kind of cross-cultural exposure is not a line on a CV - it shapes how I read a room, how I run global teams across time zones, and how I help leadership teams calibrate decisions that need to land in very different cultural contexts.</p>
     <p>Today I run <strong>Commercial Operations</strong> at Pedigri Technologies, working directly with the CEO on the strategic projects, cross-functional fixes and operational governance that move the business forward. My pattern across every role has been the same: <strong>founder proximity, solving unclear problems, fixing gaps between teams, and translating strategy into execution</strong> without needing heavy structure to do it.</p>
-    <p>I am intentional about where this leads next. The natural step is <strong>Chief of Staff</strong> to a CEO at a Series A to Series C company - one where the model is working but the operating system needs an upgrade, and where AI-leveraged decision support, KPI visibility and better internal workflows can become a real competitive edge.</p>
+    <p>I am intentional about where this leads next. The natural step is <strong>Chief of Staff</strong> to a CEO - whether at a high-growth startup, a scaling SME, or inside a larger corporate where a senior operator is needed to upgrade the operating system, sharpen prioritisation, and unlock the leadership team's time.</p>
 
     <div class="features">
       <div class="feature"><div class="ftitle">Executive Judgment &amp; CEO Partnership</div><p class="fdesc">Knowing what matters, what does not, and what should reach the CEO versus get solved without them. Trusted with sensitive topics: comp, founder dynamics, investor and board conversations.</p></div>
       <div class="feature"><div class="ftitle">Cross-Functional Operations</div><p class="fdesc">Fluent across sales, finance, people, product and operations. Closed a $3M Series A extension at Audiomob, sold a majority stake in Boss Bunny, ran the back-end of a regional mobile app launch.</p></div>
       <div class="feature"><div class="ftitle">Performance, OKRs &amp; Prioritisation</div><p class="fdesc">KPI architecture, dashboards, and decision frameworks that hold a leadership team accountable to the five things that matter, not the hundred that feel urgent.</p></div>
+      <div class="feature"><div class="ftitle">People &amp; Culture Partner</div><p class="fdesc">Strategic counterpart to HR and People leaders, not a replacement for them. Org design, headcount planning, hiring at scale (3-4x at Audiomob), and reading the soft signals across multicultural teams.</p></div>
+      <div class="feature"><div class="ftitle">Multicultural Fluency</div><p class="fdesc">Worked and led teams across Europe, Southeast Asia and MEA. Comfortable with the cultural nuance of running a French-led company in Dubai, a UK ad tech in Abu Dhabi, or a US-headquartered scale-up across three time zones.</p></div>
       <div class="feature"><div class="ftitle">Systems Thinking &amp; AI Leverage</div><p class="fdesc">Building modern internal operating systems: workflow automation, AI-enabled reporting, and decision support tools that compound a CEO's time. A core differentiator for the next decade of CoS roles.</p></div>
     </div>
   </section>
@@ -231,7 +234,7 @@
       <div class="stop">
         <div class="when">2019 - 2020<br>Dubai</div>
         <div class="stop-logo"><img src="pedigri.png" alt="Pedigri Technologies"></div>
-        <div><div class="role">Business Development Manager, MEA</div><div class="where"><strong>Pedigri Technologies</strong> <span class="sector">· Supply chain SaaS</span></div><p class="blurb">Switched from gaming to deep-tech B2B. Owned business development across 30+ countries in MEA &amp; APAC, closing partnerships with Philips Healthcare and Darktrace.</p></div>
+        <div><div class="role">Business Development Manager, MEA</div><div class="where"><strong>Pedigri Technologies</strong> <span class="sector">· Supply chain SaaS</span></div><p class="blurb">Switched from gaming to deep-tech B2B. Owned business development across 30+ countries in MEA and APAC, closing partnerships with Philips Healthcare and Darktrace.</p></div>
       </div>
       <div class="stop">
         <div class="when">2020<br>Dubai</div>
@@ -251,7 +254,7 @@
       <div class="stop">
         <div class="when">2025 - Present<br>Dubai <span class="here">Now</span></div>
         <div class="stop-logo"><img src="pedigri.png" alt="Pedigri Technologies"></div>
-        <div><div class="role">Commercial Operations · CEO Partner</div><div class="where"><strong>Pedigri Technologies</strong> <span class="sector">· Supply chain SaaS</span></div><p class="blurb">Working directly with the CEO on commercial operations, strategic projects and operational governance: closing the gaps between sales, ops and trade compliance, owning senior-level BD, and building the systems that make decisions easier. Full-circle from where I first met Pedigri in 2019, now from the inside.</p></div>
+        <div><div class="role">Commercial Operations · CEO Partner</div><div class="where"><strong>Pedigri Technologies</strong> <span class="sector">· Supply chain SaaS</span></div><p class="blurb">Working directly with the CEO on commercial operations, strategic projects and operational governance. Closing the gaps between sales, ops and trade compliance, owning senior-level BD, and building the systems that make decisions easier. Full-circle from where I first met Pedigri in 2019, now from the inside.</p></div>
       </div>
     </div>
   </section>
@@ -273,7 +276,7 @@
   <section id="contact" class="cta">
     <div>
       <h3>Looking for a Chief of Staff or strategic operator?</h3>
-      <p>I work with founders and CEOs at Series A to Series C, where the model is working but the operating system needs an upgrade.</p>
+      <p>I work with founders and CEOs across startups, SMEs and corporates - wherever a senior operator is needed to upgrade the operating system and unlock leadership time.</p>
     </div>
     <a class="btn" href="mailto:noemie.pillon@gmail.com">Get in touch →</a>
   </section>
