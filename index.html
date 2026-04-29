@@ -1,208 +1,247 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Noémie Pillon — Operations leader</title>
+<title>Noémie Pillon — Head of Operations · Future Chief of Staff</title>
+<meta name="description" content="Operations leader with 15+ years scaling games, ad tech, and SaaS companies. Based in Dubai.">
 <style>
   :root {
-    --ink: #111;
-    --muted: #555;
-    --soft: #888;
-    --line: #e6e6e6;
-    --bg: #fafafa;
-    --accent-1: #1a6fd4;
-    --accent-2: #4db8ff;
+    --ink: #0e1f1a;
+    --muted: #4a5a55;
+    --soft: #8a9994;
+    --line: #e3e8e6;
+    --bg: #f7f5ef;
+    --card: #ffffff;
+    --accent: #0f7a5f;
+    --accent-2: #14a37a;
+    --accent-soft: rgba(15, 122, 95, 0.08);
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     color: var(--ink);
     background: var(--bg);
     line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
   }
-  .wrap {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 80px 24px 120px;
-  }
-  h1 {
-    font-size: 2.4rem;
-    margin: 0 0 12px;
-    background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-  }
-  .lede {
-    font-size: 1.1rem;
-    color: var(--muted);
-    margin: 0 0 8px;
-  }
-  .meta {
-    color: var(--soft);
-    font-size: 0.9rem;
-    margin-bottom: 40px;
-  }
-  h2 {
-    font-size: 1.3rem;
-    margin: 56px 0 16px;
-    letter-spacing: -0.01em;
-  }
-  p { color: var(--muted); margin: 0 0 14px; }
-  .about p { color: #333; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 56px 32px 120px; }
+  nav.top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; font-size: 0.9rem; }
+  nav.top .brand { font-weight: 600; letter-spacing: -0.01em; }
+  nav.top .links a { color: var(--muted); text-decoration: none; margin-left: 24px; }
+  nav.top .links a:hover { color: var(--accent); }
 
-  .timeline {
-    position: relative;
-    margin: 24px 0 0;
-    padding: 0;
-    border-left: 2px solid var(--line);
-  }
-  .stop {
-    position: relative;
-    padding: 0 0 28px 28px;
-  }
-  .stop::before {
-    content: "";
-    position: absolute;
-    left: -7px;
-    top: 6px;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent-1), var(--accent-2));
-    box-shadow: 0 0 0 4px var(--bg);
-  }
-  .stop.current::before {
-    box-shadow: 0 0 0 4px var(--bg), 0 0 0 8px rgba(26, 111, 212, 0.18);
-  }
-  .stop .when {
-    font-size: 0.78rem;
-    color: var(--soft);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 4px;
-  }
-  .stop .role {
-    font-weight: 600;
-    color: var(--ink);
-    margin-bottom: 2px;
-  }
-  .stop .where {
-    font-size: 0.95rem;
-    color: var(--muted);
-    margin-bottom: 8px;
-  }
+  .hero { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; margin-bottom: 96px; }
+  .hero-text .eyebrow { font-size: 0.78rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.16em; font-weight: 600; margin-bottom: 20px; }
+  .hero-text h1 { font-size: clamp(3rem, 7vw, 5.2rem); line-height: 0.95; margin: 0 0 24px; letter-spacing: -0.03em; font-weight: 700; }
+  .hero-text h1 .accent { background: linear-gradient(135deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+  .hero-text .lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 28px; max-width: 480px; }
+  .hero-text .meta { display: flex; gap: 20px; font-size: 0.85rem; color: var(--soft); flex-wrap: wrap; }
+  .hero-text .meta span::before { content: "•"; margin-right: 20px; color: var(--line); }
+  .hero-text .meta span:first-child::before { content: ""; margin: 0; }
+  .portrait { position: relative; }
+  .portrait img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 8px; display: block; }
+  .portrait::after { content: ""; position: absolute; inset: 12px -12px -12px 12px; background: var(--accent-soft); border-radius: 8px; z-index: -1; }
+
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-bottom: 96px; }
+  .stat { padding: 32px 24px; border-right: 1px solid var(--line); }
+  .stat:last-child { border-right: none; }
+  .stat .num { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.02em; color: var(--accent); line-height: 1; margin-bottom: 8px; }
+  .stat .label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  section h2 { font-size: 0.78rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.16em; font-weight: 600; margin: 0 0 24px; }
+  section .h-large { font-size: 2rem; line-height: 1.2; letter-spacing: -0.02em; margin: 0 0 24px; max-width: 720px; font-weight: 600; }
+  section { margin-bottom: 96px; }
+
+  .about p { color: var(--muted); font-size: 1.05rem; max-width: 720px; margin: 0 0 16px; }
+  .about p strong { color: var(--ink); font-weight: 600; }
+
+  .marquee { overflow: hidden; position: relative; padding: 24px 0; mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 8%, black 92%, transparent 100%); }
+  .marquee-track { display: inline-flex; gap: 56px; animation: scroll 40s linear infinite; align-items: center; }
+  .marquee-track:hover { animation-play-state: paused; }
+  @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .logo { height: 36px; width: auto; opacity: 0.75; filter: grayscale(1); transition: opacity .2s, filter .2s; flex-shrink: 0; }
+  .logo:hover { opacity: 1; filter: grayscale(0); }
+  .badge { display: inline-flex; align-items: center; padding: 8px 18px; border: 1px solid var(--line); border-radius: 999px; font-size: 0.95rem; font-weight: 500; color: var(--muted); background: var(--card); flex-shrink: 0; }
+
+  .timeline { position: relative; margin-top: 16px; padding-left: 0; }
+  .stop { display: grid; grid-template-columns: 180px 1fr; gap: 32px; padding: 24px 0; border-top: 1px solid var(--line); }
+  .stop:last-child { border-bottom: 1px solid var(--line); }
+  .stop .when { font-size: 0.85rem; color: var(--soft); padding-top: 4px; }
+  .stop .when .here { display: inline-block; margin-left: 6px; padding: 2px 8px; background: var(--accent); color: white; font-size: 0.7rem; border-radius: 999px; letter-spacing: 0.05em; }
+  .stop .role { font-size: 1.15rem; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.01em; }
+  .stop .where { font-size: 0.95rem; color: var(--muted); margin-bottom: 12px; }
+  .stop .where strong { color: var(--ink); font-weight: 500; }
   .stop .where .sector { color: var(--soft); }
-  .stop .blurb { font-size: 0.95rem; }
+  .stop .blurb { font-size: 0.95rem; color: var(--muted); margin: 0; }
 
-  .contact a {
-    color: var(--accent-1);
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    transition: border-color .15s;
-  }
-  .contact a:hover { border-color: var(--accent-1); }
+  .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 24px; }
+  .feature { padding: 24px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; }
+  .feature .ftitle { font-weight: 600; margin-bottom: 8px; font-size: 0.95rem; }
+  .feature .fdesc { font-size: 0.9rem; color: var(--muted); margin: 0; }
 
-  @media (max-width: 540px) {
-    .wrap { padding: 56px 18px 80px; }
-    h1 { font-size: 2rem; }
+  .pubs { display: flex; flex-direction: column; gap: 12px; }
+  .pub { display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: var(--card); border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: inherit; transition: border-color .15s, transform .15s; }
+  .pub:hover { border-color: var(--accent); transform: translateX(4px); }
+  .pub .ptitle { font-weight: 500; font-size: 0.95rem; }
+  .pub .ptype { font-size: 0.75rem; color: var(--soft); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 4px; }
+  .pub .arr { color: var(--accent); font-size: 1.2rem; }
+
+  .cta { background: var(--ink); color: var(--bg); padding: 56px 48px; border-radius: 12px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: center; }
+  .cta h3 { font-size: 1.8rem; margin: 0 0 12px; letter-spacing: -0.02em; line-height: 1.2; font-weight: 600; }
+  .cta p { color: rgba(247, 245, 239, 0.7); margin: 0; font-size: 0.95rem; }
+  .cta a.btn { background: var(--accent-2); color: var(--ink); padding: 16px 28px; border-radius: 999px; text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-block; transition: background .15s; justify-self: end; }
+  .cta a.btn:hover { background: white; }
+
+  footer { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--soft); }
+  footer a { color: var(--muted); text-decoration: none; margin-left: 20px; }
+  footer a:hover { color: var(--accent); }
+
+  @media (max-width: 720px) {
+    .wrap { padding: 32px 20px 80px; }
+    nav.top { margin-bottom: 56px; }
+    nav.top .links a { margin-left: 16px; }
+    .hero { grid-template-columns: 1fr; gap: 32px; margin-bottom: 64px; }
+    .stats { grid-template-columns: repeat(2, 1fr); }
+    .stat { border-right: none; border-bottom: 1px solid var(--line); }
+    .stat:nth-child(2) { border-right: none; }
+    .stat:nth-child(odd) { border-right: 1px solid var(--line); }
+    .stat:nth-last-child(-n+2) { border-bottom: none; }
+    .stop { grid-template-columns: 1fr; gap: 8px; }
+    .features { grid-template-columns: 1fr; }
+    .cta { grid-template-columns: 1fr; padding: 32px 24px; }
+    .cta a.btn { justify-self: start; }
+    section { margin-bottom: 64px; }
   }
 </style>
 </head>
 <body>
 <div class="wrap">
 
-  <h1>Hi, I am Noémie.</h1>
-  <p class="lede">Operations leader with 15+ years scaling startups, scaleups and MNCs across the Middle East, Asia and Europe.</p>
-  <p class="meta">Based in Dubai · French &amp; English native · Golden Visa holder</p>
+  <nav class="top">
+    <div class="brand">NP.</div>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#publications">Publications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-  <section class="about">
-    <h2>About</h2>
-    <p>I lead business operations and performance for fast-moving teams — turning strategy into systems, and ambiguity into measurable progress. My work has spanned ad tech, mobile gaming, e-commerce and media, with a focus on building the operational backbone behind commercial growth: KPIs and OKRs, fundraising and financial structure, go-to-market and people ops.</p>
-    <p>Today I work as a fractional Head of Operations, partnering with founders and leadership teams who need senior operational firepower without the full-time hire. I'm most useful in the messy middle — between Series A and Series C — where the model is working but the company is outgrowing its early scaffolding.</p>
-  </section>
-
-  <section>
-    <h2>The journey</h2>
-    <div class="timeline">
-
-      <div class="stop">
-        <div class="when">2010 – 2012 · London &amp; Singapore</div>
-        <div class="role">Business Analyst</div>
-        <div class="where">Groupon <span class="sector">· e-commerce</span></div>
-        <p class="blurb">Started my career on the analyst side of one of the fastest-scaling internet companies of the decade — first in London, then moving to Singapore as the business expanded across Asia.</p>
+  <section class="hero">
+    <div class="hero-text">
+      <div class="eyebrow">Head of Operations · Future Chief of Staff</div>
+      <h1>Noémie<br><span class="accent">Pillon.</span></h1>
+      <p class="lede">Senior operator with 15+ years building the systems behind commercial growth — partnering with founders, CEOs and CTOs to turn ambition into measurable execution.</p>
+      <div class="meta">
+        <span>Based in Dubai</span>
+        <span>UAE Golden Visa</span>
+        <span>French &amp; English native</span>
       </div>
-
-      <div class="stop">
-        <div class="when">2012 – 2014 · Singapore</div>
-        <div class="role">Business Performance Manager, Global</div>
-        <div class="where">Gameloft <span class="sector">· Mobile gaming</span></div>
-        <p class="blurb">Defined the global monetisation strategy for free-to-play mobile games, working with studios across Vietnam, Ukraine, China and New Zealand. Drove a 45% lift in IAP revenue and 50% in ARPU through performance analysis and A/B testing.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2014 – 2016 · Singapore</div>
-        <div class="role">Business Operations Manager, SEA</div>
-        <div class="where">The Walt Disney Company <span class="sector">· Gaming &amp; entertainment</span></div>
-        <p class="blurb">Ran business operations for Disney Interactive across Southeast Asia. Built KPI dashboards that doubled visibility on key game titles and supported the five-year strategic plan with consumer insights and digital analytics.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2017 – 2019 · Dubai</div>
-        <div class="role">Business Performance Manager, MEA</div>
-        <div class="where">Red Entertainment Distribution <span class="sector">· Gaming &amp; entertainment</span></div>
-        <p class="blurb">Moved to the Middle East to lead performance and digitalisation at the region's largest video game distributor — partnering with EA, Activision and Warner Bros. Led the back-end operations behind a regional mobile app launch.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2019 – 2020 · Dubai</div>
-        <div class="role">Business Development Manager, MEA</div>
-        <div class="where">Pedigri Technologies <span class="sector">· Supply chain</span></div>
-        <p class="blurb">Switched from gaming to deep-tech B2B. Owned business development for supply chain solutions across 30+ countries in MEA &amp; APAC, closing partnerships with Philips Healthcare and Darktrace.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2020 · Dubai</div>
-        <div class="role">Country Performance Manager, UAE</div>
-        <div class="where">Talabat <span class="sector">· Foodtech</span></div>
-        <p class="blurb">Joined the leading food delivery brand in MENA right as the pandemic hit. Supported the MD directly on sales targets and KPI tracking through one of the most volatile periods the business had ever seen.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2020 – 2022 · Abu Dhabi &amp; Dubai</div>
-        <div class="role">Head of Operations, Global</div>
-        <div class="where">Boss Bunny Games <span class="sector">· Mobile gaming</span></div>
-        <p class="blurb">First operational hire at the UAE's first mobile games startup. Built the investment materials and ran the due diligence that led to the sale of a majority stake to Waysun Inc. within two years of launch.</p>
-      </div>
-
-      <div class="stop">
-        <div class="when">2022 – 2024 · Abu Dhabi</div>
-        <div class="role">Head of Operations, Global</div>
-        <div class="where">Audiomob <span class="sector">· Ad tech</span></div>
-        <p class="blurb">Led Operations, Finance, Marketing and HR across three countries (US, UK, UAE) at an ad tech startup pioneering non-intrusive audio ads in mobile games. Closed a $3M Series A extension, delivered triple-digit revenue growth for three consecutive years, and grew headcount 3–4x.</p>
-      </div>
-
-      <div class="stop current">
-        <div class="when">2025 – Present · Dubai</div>
-        <div class="role">Fractional Head of Operations</div>
-        <div class="where">Independent <span class="sector">· Pedigri Technologies, Aicruit.ai, PLG</span></div>
-        <p class="blurb">Now partnering with founders as a fractional operator across gaming, SaaS and platform businesses. Back at <strong>Pedigri Technologies</strong> on a retained basis — leading commercial operations and senior-level BD, full-circle from where I first met them in 2019.</p>
-      </div>
-
+    </div>
+    <div class="portrait">
+      <img src="noemie.jpg" alt="Noémie Pillon">
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Get in touch</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/noemie-pillon17/" target="_blank" rel="noopener">LinkedIn</a>
-      ·
-      <a href="mailto:noemie.pillon@gmail.com">Email</a>
-    </p>
+  <section class="stats" aria-label="Career snapshot">
+    <div class="stat"><div class="num">15+</div><div class="label">Years of experience</div></div>
+    <div class="stat"><div class="num">5+</div><div class="label">Games companies scaled</div></div>
+    <div class="stat"><div class="num">4</div><div class="label">Tech &amp; SaaS scale-ups</div></div>
+    <div class="stat"><div class="num">3</div><div class="label">Continents · MEA · APAC · EU</div></div>
   </section>
+
+  <section id="about" class="about">
+    <h2>About</h2>
+    <p class="h-large">Operations is the bridge between strategy and execution. I've spent 15 years building that bridge — for founders, CEOs and leadership teams who need senior operational firepower without the full-time hire.</p>
+    <p>I lead business operations and performance for fast-moving companies — designing the OKR and KPI frameworks that turn ambiguity into measurable progress, the financial structure that supports fundraising, and the cross-functional rhythm that lets a team actually ship. My work has spanned <strong>ad tech, mobile gaming, e-commerce, foodtech, supply-chain SaaS</strong> and media, with deep exposure across <strong>The Walt Disney Company, Gameloft, Talabat, Groupon, Vodafone, Audiomob</strong> and others.</p>
+    <p>Today I work as a fractional Head of Operations and partner directly with founders — and I'm orienting toward <strong>Chief of Staff</strong> work, where my background sitting alongside CEOs, CTOs and boards translates most naturally. I'm most useful in the messy middle, where the model is working but the company is outgrowing its early scaffolding.</p>
+
+    <div class="features">
+      <div class="feature"><div class="ftitle">Performance &amp; OKRs</div><p class="fdesc">KPI architecture, dashboards, and operating cadences that hold a leadership team accountable to its own plan.</p></div>
+      <div class="feature"><div class="ftitle">Fundraising &amp; Finance</div><p class="fdesc">Investment materials, due diligence, and financial structure — closed a $3M Series A extension at Audiomob, sold a majority stake in Boss Bunny.</p></div>
+      <div class="feature"><div class="ftitle">Go-to-Market</div><p class="fdesc">Commercial operations and senior BD across 30+ countries in MEA and APAC, working with publishers, platforms and enterprise clients.</p></div>
+      <div class="feature"><div class="ftitle">People &amp; Org</div><p class="fdesc">Headcount planning, hiring, and org design — grew Audiomob 3-4x across three countries (US, UK, UAE) in two years.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Previously worked for and with</h2>
+    <div class="marquee">
+      <div class="marquee-track">
+        <img class="logo" src="https://cdn.simpleicons.org/waltdisney/0e1f1a" alt="Disney">
+        <img class="logo" src="https://cdn.simpleicons.org/electronicarts/0e1f1a" alt="Electronic Arts">
+        <img class="logo" src="https://cdn.simpleicons.org/activision/0e1f1a" alt="Activision">
+        <img class="logo" src="https://cdn.simpleicons.org/ubisoft/0e1f1a" alt="Ubisoft">
+        <img class="logo" src="https://cdn.simpleicons.org/sega/0e1f1a" alt="Sega">
+        <img class="logo" src="https://cdn.simpleicons.org/vodafone/0e1f1a" alt="Vodafone">
+        <span class="badge">Groupon</span>
+        <span class="badge">Gameloft</span>
+        <span class="badge">Talabat</span>
+        <span class="badge">Audiomob</span>
+        <span class="badge">Boss Bunny Games</span>
+        <span class="badge">Pedigri Technologies</span>
+        <img class="logo" src="https://cdn.simpleicons.org/waltdisney/0e1f1a" alt="Disney">
+        <img class="logo" src="https://cdn.simpleicons.org/electronicarts/0e1f1a" alt="Electronic Arts">
+        <img class="logo" src="https://cdn.simpleicons.org/activision/0e1f1a" alt="Activision">
+        <img class="logo" src="https://cdn.simpleicons.org/ubisoft/0e1f1a" alt="Ubisoft">
+        <img class="logo" src="https://cdn.simpleicons.org/sega/0e1f1a" alt="Sega">
+        <img class="logo" src="https://cdn.simpleicons.org/vodafone/0e1f1a" alt="Vodafone">
+        <span class="badge">Groupon</span>
+        <span class="badge">Gameloft</span>
+        <span class="badge">Talabat</span>
+        <span class="badge">Audiomob</span>
+        <span class="badge">Boss Bunny Games</span>
+        <span class="badge">Pedigri Technologies</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="journey">
+    <h2>The Journey</h2>
+    <div class="timeline">
+      <div class="stop"><div class="when">2010 – 2012<br>London &amp; Singapore</div><div><div class="role">Business Analyst</div><div class="where"><strong>Groupon</strong> <span class="sector">· e-commerce</span></div><p class="blurb">Started my career on the analyst side of one of the fastest-scaling internet companies of the decade — first in London, then moving to Singapore as the business expanded across Asia.</p></div></div>
+      <div class="stop"><div class="when">2012 – 2014<br>Singapore</div><div><div class="role">Business Performance Manager, Global</div><div class="where"><strong>Gameloft</strong> <span class="sector">· Mobile gaming</span></div><p class="blurb">Defined the global monetisation strategy for free-to-play mobile games, working with studios across Vietnam, Ukraine, China and New Zealand. Drove a 45% lift in IAP revenue and 50% in ARPU.</p></div></div>
+      <div class="stop"><div class="when">2014 – 2016<br>Singapore</div><div><div class="role">Business Operations Manager, SEA</div><div class="where"><strong>The Walt Disney Company</strong> <span class="sector">· Gaming &amp; entertainment</span></div><p class="blurb">Ran business operations for Disney Interactive across Southeast Asia. Built KPI dashboards that doubled visibility on key game titles and supported the five-year strategic plan.</p></div></div>
+      <div class="stop"><div class="when">2017 – 2019<br>Dubai</div><div><div class="role">Business Performance Manager, MEA</div><div class="where"><strong>Red Entertainment Distribution</strong> <span class="sector">· Gaming &amp; entertainment</span></div><p class="blurb">Led performance and digitalisation at the region's largest video game distributor — partnering with EA, Activision and Warner Bros. Led the back-end operations behind a regional mobile app launch.</p></div></div>
+      <div class="stop"><div class="when">2019 – 2020<br>Dubai</div><div><div class="role">Business Development Manager, MEA</div><div class="where"><strong>Pedigri Technologies</strong> <span class="sector">· Supply chain SaaS</span></div><p class="blurb">Switched from gaming to deep-tech B2B. Owned business development across 30+ countries in MEA &amp; APAC, closing partnerships with Philips Healthcare and Darktrace.</p></div></div>
+      <div class="stop"><div class="when">2020<br>Dubai</div><div><div class="role">Country Performance Manager, UAE</div><div class="where"><strong>Talabat</strong> <span class="sector">· Foodtech</span></div><p class="blurb">Joined the leading food delivery brand in MENA right as the pandemic hit. Supported the MD directly on sales targets and KPI tracking through one of the most volatile periods the business had ever seen.</p></div></div>
+      <div class="stop"><div class="when">2020 – 2022<br>Abu Dhabi &amp; Dubai</div><div><div class="role">Head of Operations, Global</div><div class="where"><strong>Boss Bunny Games</strong> <span class="sector">· Mobile gaming</span></div><p class="blurb">First operational hire at the UAE's first mobile games startup. Built the investment materials and ran the due diligence that led to the sale of a majority stake to Waysun Inc. within two years of launch.</p></div></div>
+      <div class="stop"><div class="when">2022 – 2024<br>Abu Dhabi</div><div><div class="role">Head of Operations, Global</div><div class="where"><strong>Audiomob</strong> <span class="sector">· Ad tech</span></div><p class="blurb">Led Operations, Finance, Marketing and HR across three countries (US, UK, UAE). Closed a $3M Series A extension, delivered triple-digit revenue growth for three consecutive years, and grew headcount 3-4x.</p></div></div>
+      <div class="stop"><div class="when">2025 – Present<br>Dubai <span class="here">Now</span></div><div><div class="role">Fractional Head of Operations</div><div class="where"><strong>Independent</strong> <span class="sector">· Pedigri Technologies, Aicruit.ai, PLG</span></div><p class="blurb">Partnering with founders as a fractional operator across gaming, SaaS and platform businesses. Back at Pedigri Technologies on a retained basis — leading commercial operations and senior-level BD, full-circle from where I first met them in 2019.</p></div></div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <h2>Publications &amp; Press</h2>
+    <div class="pubs">
+      <a class="pub" href="https://www.linkedin.com/pulse/employee-spotlight-15-noemie-pillon-head-operations-audiomob-daso/" target="_blank" rel="noopener">
+        <div><div class="ptitle">Employee Spotlight: Noémie Pillon, Head of Operations at Audiomob</div><div class="ptype">LinkedIn · Article</div></div>
+        <div class="arr">→</div>
+      </a>
+      <a class="pub" href="https://www.youtube.com/watch?v=rGNXDgcgmzQ" target="_blank" rel="noopener">
+        <div><div class="ptitle">Podcast appearance · scaling operations in MENA gaming &amp; ad tech</div><div class="ptype">YouTube · Podcast</div></div>
+        <div class="arr">→</div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="cta">
+    <div>
+      <h3>Looking for a senior operator or Chief of Staff?</h3>
+      <p>I work with founders and leadership teams on a fractional or full-time basis. Most useful between Series A and Series C.</p>
+    </div>
+    <a class="btn" href="mailto:noemie.pillon@gmail.com">Get in touch →</a>
+  </section>
+
+  <footer>
+    <div>© Noémie Pillon · Dubai</div>
+    <div>
+      <a href="https://www.linkedin.com/in/noemie-pillon17/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:noemie.pillon@gmail.com">Email</a>
+    </div>
+  </footer>
 
 </div>
 </body>
